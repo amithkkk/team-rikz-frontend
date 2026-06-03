@@ -5,132 +5,128 @@ import { motion } from "framer-motion";
 export default function Navbar() {
   return (
     <motion.header
-      initial={{ y: -80, opacity: 0 }}
+      initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8 }}
-      className="
-      fixed top-0 left-0 w-full z-50
-      "
+      className="fixed top-0 left-0 w-full z-50"
     >
+      <div className="px-4 pt-4">
+        <div
+          className="
+          max-w-7xl mx-auto
+          rounded-[28px]
+          border border-white/10
+          bg-black/40
+          backdrop-blur-3xl
+          shadow-[0_20px_80px_rgba(0,0,0,0.45)]
+          "
+        >
+          <div className="flex items-center justify-between px-6 lg:px-8 py-5">
+            
+            {/* LOGO */}
+            <a href="#" className="group">
+              <div className="flex flex-col">
+                <span
+                  className="
+                  text-2xl lg:text-3xl
+                  font-black
+                  tracking-[0.35em]
+                  "
+                >
+                  TEAM RIKZ
+                </span>
 
-      <div
-        className="
-        mx-4 mt-4
-        rounded-2xl
-        border border-white/10
-        bg-black/30
-        backdrop-blur-2xl
-        shadow-[0_0_50px_rgba(255,255,255,0.03)]
-        "
-      >
+                <span
+                  className="
+                  mt-1
+                  text-[10px]
+                  uppercase
+                  tracking-[0.45em]
+                  text-zinc-500
+                  "
+                >
+                  Acrobatics & Movement Academy
+                </span>
+              </div>
+            </a>
 
-        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-
-          {/* LOGO */}
-          <div>
-
-            <h1
+            {/* NAVIGATION */}
+            <nav
               className="
-              text-2xl md:text-3xl
-              tracking-[0.45em]
-              font-black
+              hidden xl:flex
+              items-center
+              gap-10
               "
             >
-              TEAM RIKZ
-            </h1>
+              {[
+                ["About", "#about"],
+                ["Programs", "#programs"],
+                ["Results", "#results"],
+                ["Coaching", "#coaching"],
+                ["Community", "#community"],
+                ["Contact", "#contact"],
+              ].map(([label, link]) => (
+                <a
+                  key={label}
+                  href={link}
+                  className="
+                  text-[12px]
+                  uppercase
+                  tracking-[0.25em]
+                  text-zinc-400
+                  hover:text-white
+                  transition-all
+                  duration-300
+                  "
+                >
+                  {label}
+                </a>
+              ))}
+            </nav>
 
+            {/* RIGHT SIDE */}
+            
+
+              <button
+                className="
+                group
+                relative
+                overflow-hidden
+                px-7 py-3
+                rounded-full
+                bg-white
+                text-black
+                text-xs
+                uppercase
+                tracking-[0.25em]
+                font-bold
+                hover:scale-105
+                transition-all
+                duration-300
+                "
+              >
+                <span className="relative z-10">
+                  Start Journey
+                </span>
+
+                <div
+                  className="
+                  absolute inset-0
+                  opacity-0
+                  group-hover:opacity-100
+                  transition
+                  duration-300
+                  bg-gradient-to-r
+                  from-white
+                  via-zinc-200
+                  to-white
+                  "
+                />
+              </button>
+            </div>
           </div>
-
-          {/* NAV LINKS */}
-          <div
-            className="
-            hidden lg:flex
-            items-center gap-12
-            text-[12px]
-            uppercase
-            tracking-[0.28em]
-            text-gray-400
-            "
-          >
-
-            <a
-              href="#"
-              className="hover:text-white transition duration-300"
-            >
-              About
-            </a>
-
-            <a
-              href="#"
-              className="hover:text-white transition duration-300"
-            >
-              Programs
-            </a>
-
-            <a
-              href="#"
-              className="hover:text-white transition duration-300"
-            >
-              Testimonials
-            </a>
-
-            <a
-              href="#"
-              className="hover:text-white transition duration-300"
-            >
-              Membership
-            </a>
-
-            <a
-              href="#"
-              className="hover:text-white transition duration-300"
-            >
-              Contact
-            </a>
-
-          </div>
-
-          {/* BUTTON */}
-          <button
-            className="
-            group
-            relative
-            overflow-hidden
-            px-6 py-3
-            rounded-full
-            bg-white
-            text-black
-            text-xs
-            uppercase
-            tracking-[0.25em]
-            font-semibold
-            hover:scale-105
-            transition duration-300
-            "
-          >
-
-            <span className="relative z-10">
-              Join Now
-            </span>
-
-            <div
-              className="
-              absolute inset-0
-              bg-gradient-to-r
-              from-zinc-200
-              to-white
-              opacity-0
-              group-hover:opacity-100
-              transition duration-300
-              "
-            />
-
-          </button>
-
         </div>
-
-      </div>
-
+     
     </motion.header>
   );
 }

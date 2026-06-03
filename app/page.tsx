@@ -9,301 +9,836 @@ export default function Home() {
 
       <Hero />
 
-      {/* ABOUT SECTION */}
-      <section className="relative py-40 border-t border-white/5">
+{/* ABOUT RIKZY */}
+<section
+  id="about"
+  className="relative py-40 border-t border-white/5 overflow-hidden"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.04),transparent_40%)]" />
 
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.03),transparent_40%)]" />
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
 
-        <div className="max-w-7xl mx-auto px-6 relative z-10">
+    <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-          <div className="grid lg:grid-cols-2 gap-20 items-center">
+      <div>
 
-            <div>
+        <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+          About Rikzy
+        </p>
 
-              <p className="uppercase tracking-[0.4em] text-xs text-gray-500">
-                About Rikz
-              </p>
+        <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+          HI,
+          <br />
+          I'M
+          <span className="text-white/30"> RIKZY.</span>
+        </h2>
 
-              <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
-                BUILT
-                <br />
-                THROUGH
-                <span className="text-white/30"> DISCIPLINE.</span>
-              </h2>
+        <div className="mt-10 inline-flex px-5 py-2 rounded-full border border-white/10 bg-white/[0.03] text-sm text-zinc-300">
+          Professional Acrobatics & Gymnastics Coach
+        </div>
 
-            </div>
+      </div>
 
-            <div>
+      <div>
 
-              <p className="text-xl text-gray-400 leading-relaxed">
-                Master Rikz is not a conventional fitness coach.
-                Team Rikz was built as a high-performance movement
-                focused on discipline, body mastery, movement control,
-                mental resilience, and elite transformation.
-              </p>
+        <p className="text-xl text-zinc-400 leading-relaxed">
+          My passion is helping people discover what their bodies are truly capable of.
+        </p>
 
-              <div className="mt-10 grid grid-cols-2 gap-6">
+        <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
+          Through structured coaching, workshops, and years of practical
+          experience, I've helped students develop strength, flexibility,
+          body control, confidence, and advanced movement skills.
+        </p>
 
-                <div className="p-8 rounded-[30px] border border-white/10 bg-white/[0.03] backdrop-blur-xl">
-                  <h3 className="text-5xl">10+</h3>
-                  <p className="mt-3 uppercase text-xs tracking-[0.3em] text-gray-500">
-                    Years Training
-                  </p>
-                </div>
+        <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
+          I believe every person has untapped potential. With consistency,
+          proper guidance, and dedication, extraordinary progress becomes possible.
+        </p>
 
-                <div className="p-8 rounded-[30px] border border-white/10 bg-white/[0.03] backdrop-blur-xl">
-                  <h3 className="text-5xl">500+</h3>
-                  <p className="mt-3 uppercase text-xs tracking-[0.3em] text-gray-500">
-                    Transformations
-                  </p>
-                </div>
+        <p className="mt-6 text-lg text-zinc-500 leading-relaxed">
+          My goal isn't just to teach skills.
+          It's to help people become stronger, healthier, and more confident
+          versions of themselves.
+        </p>
 
-              </div>
+        <div className="mt-12 grid grid-cols-2 gap-6">
 
-            </div>
+          <div className="p-8 rounded-[32px] border border-white/10 bg-white/[0.03]">
+            <h3 className="text-5xl font-black">
+              10+
+            </h3>
 
+            <p className="mt-3 uppercase text-xs tracking-[0.3em] text-zinc-500">
+              Years Experience
+            </p>
+          </div>
+
+          <div className="p-8 rounded-[32px] border border-white/10 bg-white/[0.03]">
+            <h3 className="text-5xl font-black">
+              500+
+            </h3>
+
+            <p className="mt-3 uppercase text-xs tracking-[0.3em] text-zinc-500">
+              Students Trained
+            </p>
           </div>
 
         </div>
 
-      </section>
+      </div>
 
-      {/* PROGRAMS */}
-      <section className="py-40">
+    </div>
 
-        <div className="max-w-7xl mx-auto px-6">
+  </div>
+</section>
 
-          <div className="flex items-end justify-between flex-wrap gap-10">
+{/* WHAT WE OFFER */}
+<section
+  id="programs"
+  className="py-40 border-t border-white/5"
+>
+  <div className="max-w-7xl mx-auto px-6">
 
-            <div>
+    <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+      What We Offer
+    </p>
 
-              <p className="uppercase tracking-[0.4em] text-xs text-gray-500">
-                Programs
-              </p>
+    <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+      TRAIN.
+      <br />
+      LEARN.
+      <br />
+      <span className="text-white/30">
+        EVOLVE.
+      </span>
+    </h2>
 
-              <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
-                TRAIN
-                <br />
-                LIKE AN
-                <span className="text-white/30"> ATHLETE.</span>
-              </h2>
+    <div className="mt-20 grid lg:grid-cols-2 gap-8">
 
-            </div>
+      <div className="rounded-[40px] border border-white/10 bg-white/[0.03] p-10">
+        <p className="uppercase tracking-[0.3em] text-xs text-zinc-500">
+          01
+        </p>
 
+        <h3 className="mt-5 text-4xl font-bold">
+          Acrobatics Training
+        </h3>
+
+        <ul className="mt-8 space-y-3 text-zinc-400">
+          <li>• Handstands</li>
+          <li>• Cartwheels</li>
+          <li>• Walkovers</li>
+          <li>• Balancing Skills</li>
+          <li>• Body Control</li>
+          <li>• Advanced Acrobatics</li>
+        </ul>
+      </div>
+
+      <div className="rounded-[40px] border border-white/10 bg-white/[0.03] p-10">
+        <p className="uppercase tracking-[0.3em] text-xs text-zinc-500">
+          02
+        </p>
+
+        <h3 className="mt-5 text-4xl font-bold">
+          Flexibility & Mobility
+        </h3>
+
+        <ul className="mt-8 space-y-3 text-zinc-400">
+          <li>• Back Flexibility</li>
+          <li>• Shoulder Mobility</li>
+          <li>• Hip Mobility</li>
+          <li>• Splits Training</li>
+          <li>• Recovery Methods</li>
+        </ul>
+      </div>
+
+      <div className="rounded-[40px] border border-white/10 bg-white/[0.03] p-10">
+        <p className="uppercase tracking-[0.3em] text-xs text-zinc-500">
+          03
+        </p>
+
+        <h3 className="mt-5 text-4xl font-bold">
+          Strength & Conditioning
+        </h3>
+
+        <ul className="mt-8 space-y-3 text-zinc-400">
+          <li>• Core Strength</li>
+          <li>• Functional Training</li>
+          <li>• Athletic Conditioning</li>
+          <li>• Balance Development</li>
+          <li>• Endurance Training</li>
+        </ul>
+      </div>
+
+      <div className="rounded-[40px] border border-white/10 bg-white/[0.03] p-10">
+        <p className="uppercase tracking-[0.3em] text-xs text-zinc-500">
+          04
+        </p>
+
+        <h3 className="mt-5 text-4xl font-bold">
+          Workshops
+        </h3>
+
+        <p className="mt-8 text-zinc-400 leading-relaxed">
+          Interactive sessions designed to accelerate learning,
+          improve technique, and create a supportive environment
+          where students can grow faster together.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{/* WHY TRAIN WITH US */}
+<section
+  className="py-40 border-t border-white/5"
+>
+  <div className="max-w-7xl mx-auto px-6">
+
+    <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+      Why Train With Us
+    </p>
+
+    <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+      BUILT FOR
+      <br />
+      REAL
+      <span className="text-white/30">
+        PROGRESS.
+      </span>
+    </h2>
+
+    <div className="mt-20 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {[
+        "Professional Coaching",
+        "Beginner Friendly Programs",
+        "Safe Learning Environment",
+        "Structured Skill Progressions",
+        "Personalized Support",
+        "Community Driven Growth",
+        "Proven Training Methods",
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="
+          rounded-[35px]
+          border border-white/10
+          bg-white/[0.03]
+          p-8
+          hover:-translate-y-2
+          transition
+          duration-300
+          "
+        >
+          <div className="text-4xl">
+            ✓
           </div>
 
-          <div className="mt-20 grid lg:grid-cols-3 gap-8">
-
-            {[
-              "Beginner Evolution",
-              "Strength Forge",
-              "Elite Hybrid",
-            ].map((program, index) => (
-              <div
-                key={index}
-                className="
-                group
-                relative
-                overflow-hidden
-                rounded-[40px]
-                border border-white/10
-                bg-white/[0.03]
-                p-10
-                min-h-[420px]
-                hover:-translate-y-2
-                transition duration-500
-                "
-              >
-
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_40%)]" />
-
-                <p className="uppercase tracking-[0.3em] text-xs text-gray-500">
-                  Program 0{index + 1}
-                </p>
-
-                <h3 className="mt-6 text-5xl leading-none">
-                  {program}
-                </h3>
-
-                <p className="mt-8 text-gray-400 leading-relaxed">
-                  Elite calisthenics programming focused on
-                  body control, strength development, mobility,
-                  endurance, and athletic transformation.
-                </p>
-
-                <button
-                  className="
-                  absolute bottom-10 left-10
-                  px-6 py-3
-                  rounded-full
-                  border border-white/10
-                  uppercase
-                  tracking-[0.2em]
-                  text-xs
-                  hover:bg-white hover:text-black
-                  transition
-                  "
-                >
-                  Explore
-                </button>
-
-              </div>
-            ))}
-
-          </div>
-
+          <h3 className="mt-6 text-xl font-semibold">
+            {item}
+          </h3>
         </div>
+      ))}
 
-      </section>
+    </div>
 
-      {/* TESTIMONIALS */}
-      <section className="py-40 border-t border-white/5">
+  </div>
+</section>
 
-        <div className="max-w-7xl mx-auto px-6">
+{/* RESULTS THAT MATTER */}
+<section
+  id="results"
+  className="relative py-40 border-t border-white/5 overflow-hidden"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05),transparent_45%)]" />
 
-          <p className="uppercase tracking-[0.4em] text-xs text-gray-500">
-            Testimonials
-          </p>
+  <div className="max-w-7xl mx-auto px-6 relative z-10">
 
-          <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
-            REAL
-            <br />
-            TRANSFORMATION.
-          </h2>
+    <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+      Results That Matter
+    </p>
 
-          <div className="mt-20 grid lg:grid-cols-3 gap-8">
+    <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+      REAL
+      <br />
+      TRANSFORMATION.
+    </h2>
 
-            {[
-              "I became stronger mentally and physically within months.",
-              "Team Rikz completely changed my discipline and lifestyle.",
-              "The energy, coaching, and structure are unreal.",
-            ].map((text, index) => (
-              <div
-                key={index}
-                className="
-                rounded-[35px]
-                border border-white/10
-                bg-white/[0.03]
-                backdrop-blur-xl
-                p-10
-                "
-              >
+    <p className="mt-10 max-w-3xl text-xl text-zinc-400 leading-relaxed">
+      Our students don't just learn skills.
+      They build confidence, strength, flexibility,
+      body awareness, and a mindset that extends far
+      beyond training.
+    </p>
 
-                <div className="text-5xl text-white/20">
-                  ”
-                </div>
+    <div className="mt-20 grid lg:grid-cols-3 gap-8">
 
-                <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-                  {text}
-                </p>
-
-                <div className="mt-10">
-
-                  <h4 className="uppercase tracking-[0.3em] text-xs text-gray-500">
-                    Team Rikz Member
-                  </h4>
-
-                </div>
-
-              </div>
-            ))}
-
-          </div>
-
-        </div>
-
-      </section>
-
-      {/* MEMBERSHIP */}
-      <section className="relative py-40 overflow-hidden">
-
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05),transparent_40%)]" />
-
-        <div className="max-w-5xl mx-auto px-6 relative z-10">
-
+      {[
+        {
+          title: "Greater Confidence",
+          text: "Develop the confidence that comes from mastering difficult skills and overcoming challenges."
+        },
+        {
+          title: "Increased Strength",
+          text: "Build functional strength that improves both athletic performance and everyday movement."
+        },
+        {
+          title: "Better Flexibility",
+          text: "Unlock greater freedom of movement while reducing limitations and injury risk."
+        },
+        {
+          title: "Athletic Performance",
+          text: "Improve coordination, balance, control, and overall athletic ability."
+        },
+        {
+          title: "Body Awareness",
+          text: "Learn how to move efficiently, safely, and with precision."
+        },
+        {
+          title: "Growth Mindset",
+          text: "Develop discipline, patience, and resilience through consistent practice."
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          className="
+          rounded-[38px]
+          border border-white/10
+          bg-white/[0.03]
+          backdrop-blur-xl
+          p-10
+          hover:-translate-y-2
+          transition-all
+          duration-500
+          "
+        >
           <div
             className="
-            rounded-[50px]
-            border border-white/10
-            bg-white/[0.03]
-            backdrop-blur-2xl
-            p-14 md:p-20
-            text-center
+            w-14 h-14
+            rounded-2xl
+            bg-white/5
+            flex items-center justify-center
+            text-2xl
             "
           >
+            ⚡
+          </div>
 
-            <p className="uppercase tracking-[0.4em] text-xs text-gray-500">
-              Membership
-            </p>
+          <h3 className="mt-8 text-3xl font-bold">
+            {item.title}
+          </h3>
 
-            <h2 className="mt-8 text-6xl md:text-8xl leading-[0.9]">
-              JOIN THE
-              <br />
-              MOVEMENT.
-            </h2>
+          <p className="mt-5 text-zinc-400 leading-relaxed">
+            {item.text}
+          </p>
+        </div>
+      ))}
 
-            <p className="mt-8 max-w-2xl mx-auto text-lg text-gray-400 leading-relaxed">
-              Unlock elite calisthenics programs, class booking,
-              private coaching, transformation tracking,
-              and access to the Team Rikz community.
-            </p>
+    </div>
 
-            <div className="mt-12 flex justify-center">
+    <div
+      className="
+      mt-16
+      rounded-[40px]
+      border border-white/10
+      bg-white/[0.03]
+      p-10
+      text-center
+      "
+    >
+      <h3 className="text-3xl md:text-4xl font-bold">
+        Every achievement starts with one step.
+      </h3>
 
-              <button
-                className="
-                px-10 py-5
-                rounded-full
-                bg-white
-                text-black
-                uppercase
-                tracking-[0.2em]
-                text-sm
-                font-semibold
-                hover:scale-105
-                transition duration-300
-                "
-              >
-                Become A Member
-              </button>
+      <p className="mt-4 text-zinc-500">
+        Start yours today.
+      </p>
+    </div>
 
+  </div>
+</section>
+
+{/* ONLINE COACHING */}
+<section
+  id="coaching"
+  className="py-40 border-t border-white/5"
+>
+  <div className="max-w-7xl mx-auto px-6">
+
+    <div className="grid lg:grid-cols-2 gap-20 items-center">
+
+      <div>
+
+        <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+          Online Coaching
+        </p>
+
+        <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+          TRAIN
+          <br />
+          FROM
+          <span className="text-white/30">
+            ANYWHERE.
+          </span>
+        </h2>
+
+      </div>
+
+      <div>
+
+        <p className="text-xl text-zinc-400 leading-relaxed">
+          Get personalized guidance, technique feedback,
+          custom programs, and ongoing support no matter
+          where you're located.
+        </p>
+
+        <div className="mt-10 space-y-4">
+
+          {[
+            "Beginners",
+            "Athletes",
+            "Dancers",
+            "Fitness Enthusiasts",
+            "Gymnastics Learners",
+            "Acrobatics Students",
+          ].map((item) => (
+            <div
+              key={item}
+              className="
+              flex items-center gap-4
+              rounded-2xl
+              border border-white/10
+              bg-white/[0.03]
+              px-6 py-5
+              "
+            >
+              <span className="text-white">
+                ✓
+              </span>
+
+              <span className="text-zinc-300">
+                {item}
+              </span>
             </div>
-
-          </div>
+          ))}
 
         </div>
 
-      </section>
+        <button
+          className="
+          mt-10
+          px-8 py-4
+          rounded-full
+          bg-white
+          text-black
+          uppercase
+          tracking-[0.2em]
+          text-sm
+          font-bold
+          hover:scale-105
+          transition
+          "
+        >
+          Apply For Coaching
+        </button>
 
-      {/* FOOTER */}
-      <footer className="border-t border-white/5 py-14">
+      </div>
 
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-10">
+    </div>
 
-          <div>
+  </div>
+</section>
 
-            <h2 className="text-4xl tracking-[0.3em]">
-              TEAM RIKZ
-            </h2>
+{/* COMMUNITY */}
+<section
+  id="community"
+  className="relative py-40 border-t border-white/5 overflow-hidden"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.04),transparent_45%)]" />
 
-            <p className="mt-4 text-gray-500 max-w-md">
-              Elite calisthenics movement focused on
-              discipline, body mastery, and transformation.
+  <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
+
+    <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+      Community
+    </p>
+
+    <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+      STRONG
+      <br />
+      TOGETHER.
+    </h2>
+
+    <p className="mt-10 max-w-3xl mx-auto text-xl text-zinc-400 leading-relaxed">
+      More than training.
+      We're building a community of people committed to
+      self-improvement, movement, and personal growth.
+    </p>
+
+    <div className="mt-20 grid md:grid-cols-3 gap-8">
+
+      <div
+        className="
+        rounded-[35px]
+        border border-white/10
+        bg-white/[0.03]
+        p-10
+        "
+      >
+        <h3 className="text-3xl font-bold">
+          Learn
+        </h3>
+
+        <p className="mt-4 text-zinc-500">
+          Learn new skills with proper guidance and support.
+        </p>
+      </div>
+
+      <div
+        className="
+        rounded-[35px]
+        border border-white/10
+        bg-white/[0.03]
+        p-10
+        "
+      >
+        <h3 className="text-3xl font-bold">
+          Improve
+        </h3>
+
+        <p className="mt-4 text-zinc-500">
+          Push past limits and achieve meaningful progress.
+        </p>
+      </div>
+
+      <div
+        className="
+        rounded-[35px]
+        border border-white/10
+        bg-white/[0.03]
+        p-10
+        "
+      >
+        <h3 className="text-3xl font-bold">
+          Grow
+        </h3>
+
+        <p className="mt-4 text-zinc-500">
+          Become stronger physically and mentally through movement.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="mt-16">
+
+      <h3 className="text-4xl md:text-5xl font-black">
+        Together We Learn.
+      </h3>
+
+      <h3 className="mt-3 text-4xl md:text-5xl font-black text-white/30">
+        Together We Improve.
+      </h3>
+
+      <h3 className="mt-3 text-4xl md:text-5xl font-black">
+        Together We Grow.
+      </h3>
+
+    </div>
+
+  </div>
+</section>
+
+{/* TESTIMONIALS */}
+<section
+  id="testimonials"
+  className="py-40 border-t border-white/5"
+>
+  <div className="max-w-7xl mx-auto px-6">
+
+    <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+      Student Stories
+    </p>
+
+    <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+      REAL
+      <br />
+      PEOPLE.
+      <br />
+      REAL
+      <span className="text-white/30">
+        RESULTS.
+      </span>
+    </h2>
+
+    <div className="mt-20 grid lg:grid-cols-3 gap-8">
+
+      {[
+        "I never thought I'd be able to hold a handstand. The structured progressions made it possible.",
+        "My flexibility improved more in months than years of training alone.",
+        "The coaching, support and community completely changed how I approach fitness."
+      ].map((text, index) => (
+        <div
+          key={index}
+          className="
+          rounded-[40px]
+          border border-white/10
+          bg-white/[0.03]
+          backdrop-blur-xl
+          p-10
+          hover:-translate-y-2
+          transition duration-500
+          "
+        >
+          <div className="text-6xl text-white/15">
+            ”
+          </div>
+
+          <p className="mt-6 text-lg text-zinc-300 leading-relaxed">
+            {text}
+          </p>
+
+          <div className="mt-10 pt-6 border-t border-white/10">
+
+            <p className="uppercase tracking-[0.3em] text-xs text-zinc-500">
+              Team Rikz Student
             </p>
 
           </div>
 
-          <div className="flex gap-10 text-sm uppercase tracking-[0.2em] text-gray-500">
-
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-            <a href="#">Contact</a>
-
-          </div>
-
         </div>
+      ))}
 
-      </footer>
+    </div>
+
+  </div>
+</section>
+
+{/* WORKSHOP CTA */}
+<section
+  className="relative py-40 border-t border-white/5 overflow-hidden"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_40%)]" />
+
+  <div className="max-w-5xl mx-auto px-6 relative z-10">
+
+    <div
+      className="
+      rounded-[50px]
+      border border-white/10
+      bg-white/[0.04]
+      backdrop-blur-2xl
+      p-16 md:p-24
+      text-center
+      "
+    >
+
+      <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+        Ready To Begin?
+      </p>
+
+      <h2 className="mt-8 text-6xl md:text-8xl leading-[0.9]">
+        START
+        <br />
+        YOUR
+        <br />
+        JOURNEY.
+      </h2>
+
+      <p className="mt-10 text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+        Strength. Flexibility. Confidence.
+        Skills that once seemed impossible are closer than you think.
+      </p>
+
+      <div className="mt-12 flex flex-wrap justify-center gap-5">
+
+        <button
+          className="
+          px-10 py-5
+          rounded-full
+          bg-white
+          text-black
+          font-bold
+          uppercase
+          tracking-[0.2em]
+          text-sm
+          hover:scale-105
+          transition
+          "
+        >
+          Join A Workshop
+        </button>
+
+        <button
+          className="
+          px-10 py-5
+          rounded-full
+          border border-white/10
+          bg-white/[0.03]
+          uppercase
+          tracking-[0.2em]
+          text-sm
+          hover:bg-white/[0.08]
+          transition
+          "
+        >
+          Apply For Coaching
+        </button>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+{/* CONTACT */}
+<section
+  id="contact"
+  className="py-40 border-t border-white/5"
+>
+  <div className="max-w-6xl mx-auto px-6 text-center">
+
+    <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+      Contact
+    </p>
+
+    <h2 className="mt-6 text-6xl md:text-8xl leading-[0.9]">
+      LET'S
+      <br />
+      BUILD
+      <span className="text-white/30">
+        GREATNESS.
+      </span>
+    </h2>
+
+    <p className="mt-10 max-w-3xl mx-auto text-xl text-zinc-400 leading-relaxed">
+      Ready to start your journey?
+      Let's build strength, confidence, flexibility,
+      and skills together.
+    </p>
+
+    <div className="mt-20 grid md:grid-cols-2 gap-8">
+
+      <a
+        href="https://instagram.com/rikzyy__"
+        target="_blank"
+        className="
+        rounded-[40px]
+        border border-white/10
+        bg-white/[0.03]
+        p-10
+        hover:-translate-y-2
+        transition duration-500
+        "
+      >
+        <p className="uppercase tracking-[0.3em] text-xs text-zinc-500">
+          Instagram
+        </p>
+
+        <h3 className="mt-5 text-4xl font-bold">
+          @rikzyy__
+        </h3>
+
+        <p className="mt-4 text-zinc-500">
+          Follow training updates, workshops and student progress.
+        </p>
+      </a>
+
+      <a
+        href="mailto:hello@yourdomain.com"
+        className="
+        rounded-[40px]
+        border border-white/10
+        bg-white/[0.03]
+        p-10
+        hover:-translate-y-2
+        transition duration-500
+        "
+      >
+        <p className="uppercase tracking-[0.3em] text-xs text-zinc-500">
+          Email
+        </p>
+
+        <h3 className="mt-5 text-3xl font-bold break-all">
+          hello@yourdomain.com
+        </h3>
+
+        <p className="mt-4 text-zinc-500">
+          Workshops, collaborations, coaching programs and events.
+        </p>
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+{/* FINAL BANNER */}
+<section className="py-32 border-t border-white/5">
+
+  <div className="max-w-7xl mx-auto px-6 text-center">
+
+    <h2
+      className="
+      text-[4rem]
+      md:text-[8rem]
+      font-black
+      leading-none
+      tracking-tight
+      "
+    >
+      TEAM RIKZ
+    </h2>
+
+    <p className="mt-6 text-zinc-500 uppercase tracking-[0.4em] text-xs">
+      Strong Together • Inspired By Growth
+    </p>
+
+  </div>
+
+</section>
+
+{/* FOOTER */}
+<footer className="border-t border-white/5 py-12">
+
+  <div
+    className="
+    max-w-7xl
+    mx-auto
+    px-6
+    flex
+    flex-col
+    md:flex-row
+    justify-between
+    gap-8
+    "
+  >
+
+    <div>
+
+      <h3 className="text-2xl font-bold tracking-[0.3em]">
+        TEAM RIKZ
+      </h3>
+
+      <p className="mt-4 text-zinc-500 max-w-md">
+        Professional Acrobatics, Movement,
+        Strength & Flexibility Coaching.
+      </p>
+
+    </div>
+
+    <div className="text-zinc-600 text-sm">
+      © {new Date().getFullYear()} Team Rikz.
+      All Rights Reserved.
+    </div>
+
+  </div>
+
+</footer>
 
     </main>
   );
