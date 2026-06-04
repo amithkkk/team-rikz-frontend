@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function Hero() {
@@ -133,24 +134,27 @@ tracking-tight
               transition={{ delay: 0.5 }}
               className="mt-12 flex flex-wrap gap-5"
             >
-              <button
-                className="
-                px-10 py-5
-                rounded-full
-                bg-white
-                text-black
-                font-bold
-                uppercase
-                tracking-[0.22em]
-                text-sm
-                hover:scale-105
-                transition
-                duration-300
-                "
-              >
-                Join A Workshop
-              </button>
-
+<Link
+  href="/apply"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    px-10 py-5
+    rounded-full
+    bg-white
+    text-black
+    font-bold
+    uppercase
+    tracking-[0.22em]
+    text-sm
+    hover:scale-105
+    transition
+    duration-300
+  "
+>
+  Join Our Workshop
+</Link>
               
             </motion.div>
 

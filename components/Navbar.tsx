@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 
@@ -23,33 +24,23 @@ export default function Navbar() {
         >
           <div className="flex items-center justify-between px-6 lg:px-8 py-5">
             
-            {/* LOGO */}
-            <a href="#" className="group">
-              <div className="flex flex-col">
-                <span
-                  className="
-                  text-2xl lg:text-3xl
-                  font-black
-                  tracking-[0.35em]
-                  "
-                >
-                  TEAM RIKZ
-                </span>
-
-                <span
-                  className="
-                  mt-1
-                  text-[10px]
-                  uppercase
-                  tracking-[0.45em]
-                  text-zinc-500
-                  "
-                >
-                  Acrobatics & Movement Academy
-                </span>
-              </div>
-            </a>
-
+{/* LOGO */}
+<a
+  href="/"
+  className="flex items-center transition duration-300 hover:scale-105"
+>
+  <img
+    src="/images/favcon.png"
+    alt="Team Rikz"
+    className="
+    h-20
+    lg:h-24
+    w-auto
+    object-contain
+    drop-shadow-[0_0_25px_rgba(255,255,255,0.15)]
+    "
+  />
+</a>
             {/* NAVIGATION */}
             <nav
               className="
@@ -86,43 +77,45 @@ export default function Navbar() {
 
             {/* RIGHT SIDE */}
             
+<Link
+  href="/apply"
+  className="
+    group
+    relative
+    overflow-hidden
+    px-7 py-3
+    rounded-full
+    bg-white
+    text-black
+    text-xs
+    uppercase
+    tracking-[0.25em]
+    font-bold
+    hover:scale-105
+    transition-all
+    duration-300
+    inline-flex
+    items-center
+  "
+>
+  <span className="relative z-10">
+    Start Journey
+  </span>
 
-              <button
-                className="
-                group
-                relative
-                overflow-hidden
-                px-7 py-3
-                rounded-full
-                bg-white
-                text-black
-                text-xs
-                uppercase
-                tracking-[0.25em]
-                font-bold
-                hover:scale-105
-                transition-all
-                duration-300
-                "
-              >
-                <span className="relative z-10">
-                  Start Journey
-                </span>
-
-                <div
-                  className="
-                  absolute inset-0
-                  opacity-0
-                  group-hover:opacity-100
-                  transition
-                  duration-300
-                  bg-gradient-to-r
-                  from-white
-                  via-zinc-200
-                  to-white
-                  "
-                />
-              </button>
+  <div
+    className="
+      absolute inset-0
+      opacity-0
+      group-hover:opacity-100
+      transition
+      duration-300
+      bg-gradient-to-r
+      from-white
+      via-zinc-200
+      to-white
+    "
+  />
+</Link>
             </div>
           </div>
         </div>

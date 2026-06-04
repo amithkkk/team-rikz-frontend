@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/sections/Hero";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -76,7 +77,7 @@ export default function Home() {
 
           <div className="p-8 rounded-[32px] border border-white/10 bg-white/[0.03]">
             <h3 className="text-5xl font-black">
-              500+
+              1000+
             </h3>
 
             <p className="mt-3 uppercase text-xs tracking-[0.3em] text-zinc-500">
@@ -207,7 +208,7 @@ export default function Home() {
       <br />
       REAL
       <span className="text-white/30">
-        PROGRESS.
+         PROGRESS.
       </span>
     </h2>
 
@@ -428,24 +429,27 @@ export default function Home() {
 
         </div>
 
-        <button
-          className="
-          mt-10
-          px-8 py-4
-          rounded-full
-          bg-white
-          text-black
-          uppercase
-          tracking-[0.2em]
-          text-sm
-          font-bold
-          hover:scale-105
-          transition
-          "
-        >
-          Apply For Coaching
-        </button>
-
+      <Link
+  href="/apply"
+  className="
+    inline-flex
+    items-center
+    justify-center
+    mt-10
+    px-8 py-4
+    rounded-full
+    bg-white
+    text-black
+    uppercase
+    tracking-[0.2em]
+    text-sm
+    font-bold
+    hover:scale-105
+    transition
+  "
+>
+  Apply For Coaching
+</Link>
       </div>
 
     </div>
@@ -617,83 +621,6 @@ export default function Home() {
   </div>
 </section>
 
-{/* WORKSHOP CTA */}
-<section
-  className="relative py-40 border-t border-white/5 overflow-hidden"
->
-  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_40%)]" />
-
-  <div className="max-w-5xl mx-auto px-6 relative z-10">
-
-    <div
-      className="
-      rounded-[50px]
-      border border-white/10
-      bg-white/[0.04]
-      backdrop-blur-2xl
-      p-16 md:p-24
-      text-center
-      "
-    >
-
-      <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
-        Ready To Begin?
-      </p>
-
-      <h2 className="mt-8 text-6xl md:text-8xl leading-[0.9]">
-        START
-        <br />
-        YOUR
-        <br />
-        JOURNEY.
-      </h2>
-
-      <p className="mt-10 text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
-        Strength. Flexibility. Confidence.
-        Skills that once seemed impossible are closer than you think.
-      </p>
-
-      <div className="mt-12 flex flex-wrap justify-center gap-5">
-
-        <button
-          className="
-          px-10 py-5
-          rounded-full
-          bg-white
-          text-black
-          font-bold
-          uppercase
-          tracking-[0.2em]
-          text-sm
-          hover:scale-105
-          transition
-          "
-        >
-          Join A Workshop
-        </button>
-
-        <button
-          className="
-          px-10 py-5
-          rounded-full
-          border border-white/10
-          bg-white/[0.03]
-          uppercase
-          tracking-[0.2em]
-          text-sm
-          hover:bg-white/[0.08]
-          transition
-          "
-        >
-          Apply For Coaching
-        </button>
-
-      </div>
-
-    </div>
-
-  </div>
-</section>
 
 {/* CONTACT */}
 <section
@@ -744,7 +671,7 @@ export default function Home() {
         </h3>
 
         <p className="mt-4 text-zinc-500">
-          Follow training updates, workshops and student progress.
+          Follow training updates and recent workshop videos
         </p>
       </a>
 
@@ -764,7 +691,7 @@ export default function Home() {
         </p>
 
         <h3 className="mt-5 text-3xl font-bold break-all">
-          hello@yourdomain.com
+          teamrikz1@gmail.com
         </h3>
 
         <p className="mt-4 text-zinc-500">
@@ -777,33 +704,75 @@ export default function Home() {
   </div>
 </section>
 
-{/* FINAL BANNER */}
-<section className="py-32 border-t border-white/5">
+<section
+  className="relative py-40 border-t border-white/5 overflow-hidden"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_40%)]" />
 
-  <div className="max-w-7xl mx-auto px-6 text-center">
+  <div className="max-w-5xl mx-auto px-6 relative z-10">
 
-    <h2
+    <div
       className="
-      text-[4rem]
-      md:text-[8rem]
-      font-black
-      leading-none
-      tracking-tight
+      rounded-[50px]
+      border border-white/10
+      bg-white/[0.04]
+      backdrop-blur-2xl
+      p-16 md:p-24
+      text-center
       "
     >
-      TEAM RIKZ
-    </h2>
 
-    <p className="mt-6 text-zinc-500 uppercase tracking-[0.4em] text-xs">
-      Strong Together • Inspired By Growth
-    </p>
+      <p className="uppercase tracking-[0.4em] text-xs text-zinc-500">
+        Ready To Begin?
+      </p>
+
+      <h2 className="mt-8 text-6xl md:text-8xl leading-[0.9]">
+        START
+        <br />
+        YOUR
+        <br />
+        JOURNEY.
+      </h2>
+
+      <p className="mt-10 text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">
+        Strength. Flexibility. Confidence.
+        Skills that once seemed impossible are closer than you think.
+      </p>
+
+      <div className="mt-12 flex flex-wrap justify-center gap-5">
+
+
+<Link
+  href="/apply"
+  className="
+    px-10 py-5
+    rounded-full
+    bg-white
+    text-black
+    font-bold
+    uppercase
+    tracking-[0.2em]
+    text-sm
+    hover:scale-105
+    transition
+    inline-flex
+    items-center
+    justify-center
+  "
+>
+  START YOUR JOURNEY
+</Link>
+       
+
+      </div>
+
+    </div>
 
   </div>
-
 </section>
 
 {/* FOOTER */}
-<footer className="border-t border-white/5 py-12">
+<footer className="border-t border-white/10 bg-black py-10">
 
   <div
     className="
@@ -813,33 +782,75 @@ export default function Home() {
     flex
     flex-col
     md:flex-row
+    items-center
     justify-between
     gap-8
     "
   >
 
-    <div>
+    {/* BRAND */}
+    <a
+      href="#"
+      className="
+      flex items-center
+      transition
+      duration-300
+      hover:scale-105
+      "
+    >
+      <img
+        src="/images/favcon.png"
+        alt="Team Rikz"
+        className="
+        h-16
+        lg:h-20
+        w-auto
+        object-contain
+        opacity-95
+        "
+      />
+    </a>
 
-      <h3 className="text-2xl font-bold tracking-[0.3em]">
-        TEAM RIKZ
-      </h3>
+    {/* LINKS */}
+    <div
+      className="
+      flex
+      flex-wrap
+      justify-center
+      gap-8
+      text-[12px]
+      uppercase
+      tracking-[0.25em]
+      text-zinc-500
+      "
+    >
+      <a href="#about" className="hover:text-white transition">
+        About
+      </a>
 
-      <p className="mt-4 text-zinc-500 max-w-md">
-        Professional Acrobatics, Movement,
-        Strength & Flexibility Coaching.
-      </p>
+      <a href="#programs" className="hover:text-white transition">
+        Programs
+      </a>
 
+      <a href="#contact" className="hover:text-white transition">
+        Contact
+      </a>
     </div>
 
-    <div className="text-zinc-600 text-sm">
-      © {new Date().getFullYear()} Team Rikz.
-      All Rights Reserved.
-    </div>
+    {/* COPYRIGHT */}
+    <p
+      className="
+      text-sm
+      text-zinc-600
+      whitespace-nowrap
+      "
+    >
+      © {new Date().getFullYear()} Team Rikz
+    </p>
 
   </div>
 
 </footer>
-
     </main>
   );
 }
