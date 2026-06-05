@@ -10,7 +10,7 @@ const PACKAGES = [
     id: "basics",
     tag: "01",
     label: "Headstand, Frogstand & Cartwheel Basics Workshop",
-    price: "₹1,800",
+    price: "₹1,500",
     sessions: "2 sessions",
   },
   {
