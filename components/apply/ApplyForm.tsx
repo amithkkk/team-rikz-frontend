@@ -435,7 +435,7 @@ function StepPayment({
           </div>
 
           {/* QR — replace div with <img src="/images/qr.png" ... /> once you have the file */}
-<div className="mt-8 mx-auto w-80 h-80 rounded-2xl overflow-hidden">
+<div className="mt-8 mx-auto w-full max-w-[280px] rounded-2xl overflow-hidden">
   <img src="/images/qr.png" alt="PhonePe QR" className="w-full h-full object-cover scale-[1.8]" />
 </div>
           <p className="mt-4 text-xs text-zinc-600 uppercase tracking-widest">Team Rikz</p>
